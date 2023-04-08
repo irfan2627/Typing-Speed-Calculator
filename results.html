@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			color: #333333;
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 24px;
+			color: #666666;
+			margin: 20px;
+		}
+
+		.results {
+			margin: 50px auto;
+			max-width: 600px;
+			background-color: #ffffff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #cccccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="results">
+		<h1>Results</h1>
+		<p>Your input text is {{ user_input }}</p>
+		<p>Your typing speed is {{ speed }} WPM.</p>
+		<p>You typed {{num_words}} words with {{ num_incorrect_words }} spelling mistakes and {{ num_correct_words }} correctly.</p>
+	</div>
+</body>
+</html>

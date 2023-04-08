@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typing Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      form {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-top: 50px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #3E8E41;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Welcome to the Typing Test!</h1>
+    <form action="/results" method="POST">
+      <label for="text">
+        <p>Enter your text</p>
+        <p>or</p>
+        <p>Type the following text:</p>
+      </label>
+      <p>The quick brown fox jumps over the lazy dog</p>
+      <input type="text" id="text" name="text">
+      <input type="hidden" id="start_time" name="start_time" value="">
+      <button type="submit">Start Typing</button>
+    </form>
+    <script>
+      document.getElementById("start_time").value = Date.now() / 1000;
+    </script>
+  </body>
+</html>
