@@ -21,7 +21,7 @@ def calculate_typing_speed(text, time_elapsed):
 
 def typing_test():
     print("Welcome to the Typing Test!")
-    print("Type the following text: 'The quick brown fox jumps over the lazy dog'")
+    print("Enter your text or Type the following text: 'The quick brown fox jumps over the lazy dog'")
     input("Press Enter when you're ready to start the timer.")
     start_time = time.time()
     user_input = input()
